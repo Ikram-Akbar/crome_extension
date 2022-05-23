@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "custom background",
+  "description": "the extension will be change the google background",
+  "version":"2.2",
+  "icons": {
+    "16": "img/heart.png",
+    "48": "img/heart.png",
+    "128": "img/heart.png"
+  },
+  "page action": {
+    "default_action": {
+      "16": "img/heart.png",
+      "48": "img/heart.png",
+      "128": "img/heart.png"
+    }
+  },
+  "content-script":[{
+      "matches":["https://www.google.com/*"],
+      "css":["style.css"]
+  }]
+}
